@@ -1,6 +1,6 @@
 # Pyrender
 
-This repo contains the Google Colab and python files for pyrender.
+This repo contains the Google Colab and python files for `pyrender`.
 
 Both Google Colab and python files contains the minor modifications to make the files executable.
 
