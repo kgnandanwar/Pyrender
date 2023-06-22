@@ -27,22 +27,22 @@ from pyrender import Viewer
 #------------------------------------------------------------------------------
 
 # Fuze trimesh
-fuze_trimesh = trimesh.load('./pyrender/examples/models/fuze.obj')
+fuze_trimesh = trimesh.load('./pyrender_files/examples/models/fuze.obj')
 fuze_mesh = Mesh.from_trimesh(fuze_trimesh)
 
 # Drill trimesh
-drill_trimesh = trimesh.load('./pyrender/examples/models/drill.obj')
+drill_trimesh = trimesh.load('./pyrender_files/examples/models/drill.obj')
 drill_mesh = Mesh.from_trimesh(drill_trimesh)
 drill_pose = np.eye(4)
 drill_pose[0,3] = 0.1
 drill_pose[2,3] = -np.min(drill_trimesh.vertices[:,2])
 
 # Wood trimesh
-wood_trimesh = trimesh.load('./pyrender/examples/models/wood.obj')
+wood_trimesh = trimesh.load('./pyrender_files/examples/models/wood.obj')
 wood_mesh = Mesh.from_trimesh(wood_trimesh)
 
 # Water bottle trimesh
-bottle_gltf = trimesh.load('./pyrender/examples/models/WaterBottle.glb')
+bottle_gltf = trimesh.load('./pyrender_files/examples/models/WaterBottle.glb')
 bottle_trimesh = bottle_gltf.geometry[list(bottle_gltf.geometry.keys())[0]]
 bottle_mesh = Mesh.from_trimesh(bottle_trimesh)
 bottle_pose = np.array([
